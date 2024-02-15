@@ -2,21 +2,21 @@
 
 @font-face{
 font-family: "malayalam";
-src: url("Fonts/Malayalam/Malayalam.ttc") ; 
+src: url("Malayalam.ttc") ; 
 }
 
 @font-face{
 font-family: "Kumbhsans";
-src: url("Fonts/Kumbh_Sans/static/KumbhSans-Regular.ttf");
+src: url("KumbhSans-Regular.ttf");
 }
 @font-face{
 font-family: "Kumbhsans2";
-src: url("Fonts/Kumbh_Sans/static/KumbhSans-ExtraLight.ttf");
+src: url("KumbhSans-ExtraLight.ttf");
 }
 
 @font-face{
 font-family: "Kumbhsans3";
-src: url("Fonts/Kumbh_Sans/static/KumbhSans-Bold.ttf");
+src: url("KumbhSans-Bold.ttf");
 }
 
 
