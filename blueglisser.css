@@ -507,6 +507,14 @@ text-decoration: none;
     width: 85%;
     }
 }
+@media screen and (max-width:901px){
+    .serv .btn{
+    top:1600px;
+    }
+    footer{
+    top: 1650px;
+    }
+}
 @media screen and (max-width:850px) {
     footer .redes{
     left: 60%;}
@@ -669,7 +677,7 @@ text-decoration: none;
 }
     
 
-@media screen and (max-width:413px){
+@media screen and (max-width:416px){
     .titleservice h1{
     font-size: xx-large;
     }
