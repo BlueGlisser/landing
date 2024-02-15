@@ -1,50 +1,28 @@
-/*@media screen and (max-width: 800px) 
-360 x 640 px
-Móvil medio: 375 x 667 px
-Smartphone grande: 720 x 1280 px
-Ordenador portátil medio: 1366 x 768 px
-Ordenador de escritorio medio: 1440 x 900 px
-PC de escritorio grande: 1920 x 1080 px*/
 
-/*@media screen and (min-width:375px)
-{.service{
-width: Fill (375px);
-height: Hug (1,296px);
-padding: 0px, 24px, 0px, 24px;
-}
-}*/
-/*@media screen and (max-width:768px) {
-    .titulo {
-   
-    
-    }
- 
-    
-}*/
 /*fonts*/
 
 @font-face{
 font-family: "malayalam";
-src: url("Fonts/Malayalam/Malayalam.ttc") ; 
+src: url("Malayalam.ttc") ; 
 }
 
 @font-face{
 font-family: "Kumbhsans";
-src: url("Fonts/Kumbh_Sans/static/KumbhSans-Regular.ttf");
+src: url("KumbhSans-Regular.ttf");
 }
 @font-face{
 font-family: "Kumbhsans2";
-src: url("Fonts/Kumbh_Sans/static/KumbhSans-ExtraLight.ttf");
+src: url("KumbhSans-ExtraLight.ttf");
 }
 
 @font-face{
 font-family: "Kumbhsans3";
-src: url("Fonts/Kumbh_Sans/static/KumbhSans-Bold.ttf");
+src: url("KumbhSans-Bold.ttf");
 }
 
 
 *{
-box-sizing: 1200px;
+box-sizing: 1920px;
 margin: 0px;
 padding: 0px;
 }
@@ -52,10 +30,16 @@ padding: 0px;
 body{
 background-color:#FAF9F7;
 }
+
+.linea hr{
+width: 80%;
+margin: 5% 10%;   
+}
+
 /* HEADER */
          
 .header{
-width: Fixed (1,080px); 
+width: 95%; 
 background-color: #FAF9F7;
 display: flex;
 justify-content: space-between;
@@ -100,7 +84,6 @@ background: #34322E;
 border-radius: 10px;
 cursor: pointer;
 color: #ffffff;
-text-decoration: none;
 }
 .header .btn p{
 font-size: medium;
@@ -113,46 +96,39 @@ padding-top: 7px;
 /*title*/
 
 section .titulo{
-width: Fill (1,920px);
-height:auto (532px);
-padding: 96px, 0px, 120px, 0px;
-gap: 48px;
-justify-content: center;
+width: 95%;
+display: contents;
 }
 .title{
-padding-left: 10%;
-padding-top: 10%;
-display: inline-block;
-justify-content: center;
-}
-.title p{
-width:1200px;
-text-align: center;
-font-size: 30px;
+width: 95%;
+padding: 0 30%;
+padding-top: 50px;
+font-size: xx-large;
 color:#1F3477;
 font-family: "kumbhsans";
 }
-
+.title .pp{
+font-size: 0px;
+}
 .subtitle {
-padding-top: 40px ;
-padding-left: 100px;
-width: 1200px;
+padding-top: 20px ;
+width: 100%;
 text-align: center;
 font-size: 50px;
 font-family:"kumbhsans";
 color: #2E2C29;
 }
-
 .img-container img{
-padding-top: 150px;
+padding-top: 50px;
 width: 100%;
 }
+
 /* section proposal*/
 
 .parrafo{
 padding-top: 120px;
-padding-left: 50px;
-width: 1000px;
+padding-left: 80px;
+width: 80%;
 }
 .parrafo h5{
 font-family: "kumbhsans3";
@@ -175,52 +151,49 @@ color: #7A7875;
 /* carousel*/
 
 .slider-box{ 
-width: Fill (1,920px);
-height: Hug (392px);
-padding: 0px, 120px, 0px, 120px;
-padding-top:100px ;
+width: 100%;
+padding: top 120px; ;
 height: auto;
 margin: 50px auto 0;
+overflow: hidden;
 }
 
 .slider-box .in ul{
 display: flex;
 padding: 0;
-width: 300%;
+width: 90%;
 list-style: none;
 animation: slide 60s infinite ;
 }
 
 @keyframes slide{
-45% { margin-left: -100%;}
+50% {margin-left: -100%;}
+45% {margin-left: -100%;}
 50% {margin-left: -100%;}
 70% {margin-left: -100%;}
 
 }
 
 .slider-box2 {
-width: Fill (1,920px);
-height: Hug (392px);
-padding: 0px, 120px, 0px, 120px ;
+width: 90%;
 height: auto;
-margin: 50px auto 0;    
-
+padding: 0px, 120px, 0px, 120px ;
+margin: 50px auto 0;
+overflow: hidden;    
 }
 .out ul{
-margin-left: 5px;
 display: flex;
-padding: 0;
-width: 320%;
+margin-left: 5px;
+width: 100%;
 list-style:none;
-animation: slide2 60s  infinite ;
+animation: slide2 70s  infinite alternate  ease-in-out;
 }
 
 @keyframes slide2{
-
+50% {margin-left: 100%;}
 45% {margin-left: 100%;}
 50% {margin-left: 100%;}
 70% {margin-left: 100%;}
-
 }
 
 /*section nuestros trabajos*/
@@ -228,14 +201,12 @@ animation: slide2 60s  infinite ;
 .nuestros-trabajos{
 padding-top: 40px;
 margin: 80px ;
-width: Fill (1,920px);
-height: Hug (392px);
-padding: 0px, 120px, 0px, 120px ;
+width: 95%;
+height: auto;
 }
-
 .nuestros-trabajos p{
 font-family: "kumbhsans";
-font-size: 50px;
+font-size: 40px;
 }
 
 .nuestros-trabajos .titletrabajos{
@@ -245,23 +216,24 @@ font-size: xx-large;
 }
 
 .nuestros-trabajos .cards{
+padding-left: 40px;
 padding-top: 80px;
 display: flex;
-width: 1200px;
-justify-content: space-between;
+width: 80%;
+justify-content: space-around;
 }
 
 .nuestros-trabajos .cards h5{
 padding-top: 30px;
 font-family: "kumbhsans";
-font-size: x-large;
+font-size: large;
 color: #2E2C29;
 }
 
 .nuestros-trabajos .cards ul{
 font-family: "Kumbhsans";
 color: #2E2C29;
-font-size: 15px;
+font-size:small;
 padding-left: 200px;
 }
 ::marker{
@@ -272,8 +244,8 @@ color: #db93c3;
 /* section service*/
 
 .service{
-width: Fill (1,920px);
-height: Hug (392px);
+width: 95%;
+height: auto;
 padding: 0px, 120px, 0px, 120px ;
 padding-top: 40px;
 margin: 80px ;
@@ -298,7 +270,7 @@ justify-content: space-around;
 padding-top:30px;
 font-size: x-small;
 font-family:"Kumbhsans";
-color: #2E2C29;
+color: #7A7875;
 }
 .service .card h3{
 padding-top:20px;
@@ -308,19 +280,23 @@ color: #2E2C29;
 }
 
 .service .card p{
-font-family:"kumbhsans2";
+padding-top: 3%;
+font-family:"kumbhsans";
 font-size: small;
+color: #7A7875;
 }
 
+.picture{
+width: 100%;
+padding-top: 5%;
+}
 /*Serv*/
 
 section .serv {
-width: Fill (1,920px);
-height: Hug (392px);
-padding: 0px, 120px, 0px, 120px ;
+width: 95%;
+height: auto;
 padding-top: 50px;
 margin: 80px ;
-height:max-content;
 }
 .serv .titleserv{
 padding-top: 30px;
@@ -329,7 +305,7 @@ padding-left: 50px;
 .serv .titleserv h1{
 font-family: "kumbhsans2"; 
 color:#2E2C29;
-font-size: 50px;
+font-size: 3rem;
 }
 .serv .titleserv .strong{
 font-family: "kumbhsans";
@@ -343,13 +319,14 @@ flex-wrap: wrap;
 .container .card{
 padding-left: 50px;
 padding-top: 40px;
-width: 590px;
+width: 45%;
 justify-content: space-around;
 }
-
+.container .card1{
+width: 95%;
+}
 .container .card h1{
 padding-top: 30px;
-font-weight: 600;
 font-family: "kumbhsans";
 color: #2E2C29;
 }
@@ -402,11 +379,9 @@ padding-top: 7px;
 /*footer*/
 
 footer{
-width: Fill (1,920px);
-padding: 0px, 120px, 0px, 120px ;
+width: 100%;
 position: relative;
 top: 1100px;
-height: Fixed (741px);
 justify-content:space-between;
 background-color:#2E2C29;
 font-family: "kumbhsans2";
@@ -421,7 +396,7 @@ text-align: right;
 }
 footer .datos{
 position:relative;
-left: 1100px;
+left: 80%;
 list-style: none;
 }
 
@@ -437,13 +412,19 @@ color:#ffffff;
 }
 footer .pie{
 display: flex;
-padding-left: 80px;
+padding-left: 5%;
 padding-top: 50px;
+}
+footer .redes1{
+font-size: 0px;
+}
+footer .marca{
+font-size: 0px;
 }
 footer .redes{
 display: flex;
 position: relative;
-left: 950px;
+left: 75%;
 list-style: none;
 padding-bottom: 20px;
 }
@@ -455,3 +436,256 @@ color:#ffffff;
 text-decoration: none;
 }
 
+@media screen and (max-width:1000px) {
+    .header {
+    width: 95%;
+    display: flex; 
+    }
+
+    section .titulo{
+    width: 765px;
+    height:auto;
+    justify-content: center;
+    }
+    .title {
+    width: 42%;
+    text-align: center;
+    font-size: 15px;
+    color:#1F3477;
+    font-family: "kumbhsans";
+    }
+    .subtitle {
+    padding-top: 40px ;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    }
+    .parrafo {
+    padding-top: 80px;
+    width: 90%;
+    }
+    .parrafo .p2{
+    font-size: x-large;
+    }
+    .parrafo h6{
+    font-size: medium;
+    }
+    .nuestros-trabajos .cards img{
+    width: 80%;
+    justify-content: space-between;
+    }    
+    .nuestros-trabajos .cards h5{
+    font-size: small;
+    }
+    .nuestros-trabajos .cards ul{
+    padding-left: 100px;   
+    font-size:x-small ; 
+    }
+    .service .cards{
+    width: 90%;
+    justify-content: space-between;
+    gap:5%;
+    }
+    .service .card h5{
+    font-size: xx-small;
+    }
+    .service .card h6{
+    font-size: small;
+    }
+    .service .card p{
+    font-size: x-small;
+    }
+    .serv .titleserv h1{
+    font-size: 2rem;
+    }
+    .serv .btn{
+    top:1550px;
+    }
+    footer{
+    top: 1600px;
+    }
+    footer .redes{
+    left: 65%;}
+    .container .card{
+    width: 85%;
+    }
+    .container .card1{
+    width: 85%;
+    }
+}
+@media screen and (max-width:850px) {
+    footer .redes{
+    left: 60%;}
+}    
+@media screen and (max-width:819px) {
+    .serv .btn{
+    top:1650px;}
+    
+    footer{
+    top:1700px;}
+    footer .datos{
+    left: 75%;
+    }     
+}
+@media screen and (max-width:763px) {
+    .header{
+    width: 90%;
+    }
+    .header .nav-links li{
+    width: 13%;
+    font-size: 12px;
+    }
+    footer{
+    top:1800px;}
+    .btn{
+    top:1900px;}
+}
+@media screen and (max-width:729px) {
+    .serv .btn{
+    top: 1680px;}
+    footer .redes{
+    left: 55%;}
+}
+@media screen and (max-width:460px) {
+    .header{
+    width: 85%;
+    }
+    .header .nav-links li{
+    width: 0%;
+    font-size: 0px;
+    }
+    .title{
+    width: 88%;
+    padding-top: 10px;
+    }
+    .title p{
+    font-size: 0px;
+    }
+    .title .pp{
+    font-size: small;
+    padding-right: 45%;
+    }
+    .subtitle{
+    padding-top: 20px;
+    font-size: 23px;
+    }
+    .parrafo{
+    padding-left: 20px;
+    }
+    .slider-box .in ul{
+    width: 100%;}
+    .slider-box2 {
+    width: 110%;}
+    .nuestros-trabajos{
+    width: 88%;
+    padding-top: 0;
+    margin-left: 35px;
+    }
+    .nuestros-trabajos p{
+    font-size: xx-large;
+    }
+    .nuestros-trabajos .cards{
+    width: 88%;
+    display: block;
+    justify-content: center;
+   }
+   .nuestros-trabajos .card {
+    padding-bottom: 40px;
+   }
+   .nuestros-trabajos .card h5{
+    font-size: 20px;
+   }
+   .nuestros-trabajos .card ul{
+    padding-left: 60%;
+   }
+   .service{
+    width: 88%;
+    margin-left: 35px;
+   }
+   .service .cards{
+    display: block;
+   }
+   .service .card h5{
+    font-size: small;
+   }
+   .service .card h3{
+    font-size: medium;
+   }
+   .service .card p{
+    font-size: small;
+    padding-bottom: 40px;
+   }
+    .serv{
+    width: 88%;
+    }
+    .serv .card1{
+    width: 88%;
+    }
+    .serv .btn{
+    top: 2300px;}
+    footer {
+    top: 2350px;
+    }
+    footer .info{
+    padding-left: 30px;
+    }
+    footer .datos{
+    left: 60%;
+    }
+    footer .hablemos{
+    font-size: xx-large;
+    }
+    footer .hablemos p{
+    padding-top: 30px;
+    }
+    footer .hablemos svg{
+    width: 10%;
+    }
+    footer .pie{
+   display:inline-block;
+    }
+    footer .pie p{
+    font-size: 0px;
+    }
+    footer .redes a{
+    font-size: 0px;
+    }
+    footer .redes1{
+    display: flex;
+    list-style: none;
+    padding-left: 70px;
+    }
+    footer .redes1 a{
+    font-size: 12px;
+    text-decoration: none;
+    font-family: "kumbhsans";
+    color:#ffffff;
+    }
+    footer .pie .marca1{
+    padding-top: 20px;
+    font-size: 10px;
+    padding-left: 120px;
+    }     
+}
+@media screen and (max-width:413px){
+    .titleservice h1{
+    font-size: xx-large;
+    }
+    .serv .btn{
+    top: 2400px;}
+    footer {
+    top: 2450px;}
+} 
+@media screen and (max-width:391px){
+    .title{
+    padding-left: 90px;
+    }
+    .subtitle {
+    width: 88%;
+    font-size:20px;}
+    .serv .btn{
+    top: 2550px;}
+    footer {
+    top: 2600px;}
+
+}
