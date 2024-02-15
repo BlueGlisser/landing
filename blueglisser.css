@@ -661,14 +661,22 @@ text-decoration: none;
     padding-left: 120px;
     }     
 }
+@media screen and (max-width:432px){
+    .serv .btn{
+    top: 2350px;}
+    footer {
+    top: 2450px;}
+}
+    
+
 @media screen and (max-width:413px){
     .titleservice h1{
     font-size: xx-large;
     }
     .serv .btn{
-    top: 2400px;}
-    footer {
     top: 2450px;}
+    footer {
+    top: 2500px;}
 } 
 @media screen and (max-width:391px){
     .title{
