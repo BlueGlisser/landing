@@ -120,7 +120,7 @@ color: #2E2C29;
 }
 .picture img{
 padding-top: 30px;
-width: 105%;
+width: 102%;
 }
 
 /* section proposal*/
@@ -373,7 +373,7 @@ padding-top: 7px;
 /*footer*/
 
 footer{
-width: 100%;
+width: 102%;
 position: relative;
 top: 1100px;
 justify-content:space-between;
